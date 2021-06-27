@@ -42,6 +42,7 @@ class Clinica extends \yii\db\ActiveRecord
             [['Nome', 'Endereco', 'Cidade', 'Imagem'], 'string', 'max' => 145],
             [['CEP'], 'string', 'max' => 10],
             [['Bairro'], 'string', 'max' => 60],
+            [['email', 'telefone'], 'string', 'max' => 45],
             [['UF'], 'string', 'max' => 2],
             [['Clinica_id'], 'unique'],
         ];
@@ -62,6 +63,8 @@ class Clinica extends \yii\db\ActiveRecord
             'UF' => Yii::t('app', 'Uf'),
             'ibge' => Yii::t('app', 'Ibge'),
             'Imagem' => Yii::t('app', 'Imagem'),
+            'email' => Yii::t('app', 'email'),
+            'telefone' => Yii::t('app', 'teefone'),
             'criado_em' => Yii::t('app', 'Criado Em'),
             'atualizado_em' => Yii::t('app', 'Atualizado Em'),
             'status' => Yii::t('app', 'Status'),

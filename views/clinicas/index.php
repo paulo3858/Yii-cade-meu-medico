@@ -20,7 +20,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 CEP: <?php echo $linha->CEP?> <br>
                 Endereço: <?php echo $linha->Endereco?><br>
                 Bairro: <?php echo $linha->Bairro?> <br>
-                Cidade: <?php echo $linha->Cidade?> - <?php echo $linha->UF?>     
+                Cidade: <?php echo $linha->Cidade?> - <?php echo $linha->UF?> <br> 
+                Email: <?= $linha->email; ?> <br>
+                Telefone: <?= $linha->telefone; ?>
              </p>
              
             <p><a class="btn btn-primary" href="<?php echo Url::to('especialidades/view')?>" role="button">Ver Detalhes »</a></p>
