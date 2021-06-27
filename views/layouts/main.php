@@ -9,6 +9,8 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
+use app\widgets\Emailmkt;
+use PharIo\Manifest\Email;
 
 AppAsset::register($this);
 
@@ -83,8 +85,8 @@ if(navigator.geolocation) {
         </div> 
 <footer class="footer">
     <div class="container">
+        <?= Emailmkt::widget() ?>
         <p class="pull-left">&copy; <?= Yii::$app->name ?> <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
 
