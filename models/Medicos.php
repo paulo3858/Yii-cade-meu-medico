@@ -71,4 +71,9 @@ class Medicos extends \yii\db\ActiveRecord
             'status' => Yii::t('app', 'Status'),
         ];
     }
+
+    public function getMedicoHasEspecialidades()
+    {
+        return $this->hasMany(MedicoHasEspecialidades::className(), ['Medico_id' => 'Medico_id']);
+    }
 }

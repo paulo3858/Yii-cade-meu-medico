@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 E-mail: <?php echo $linha->email?><br>
              </p>
              
-            <p><a class="btn btn-primary" href="<?php echo Url::to('especialidades/view')?>" role="button">Ver Detalhes »</a></p>
+            <p><a class="btn btn-primary" href="<?= Url::toRoute(['medicos/view', 'id' => $linha->Medico_id]) ?>" role="button">Ver Detalhes »</a></p>
           </div>
           <?php if((++$key > 0)  and ($key % 3 == 0)):?>
             </div>
