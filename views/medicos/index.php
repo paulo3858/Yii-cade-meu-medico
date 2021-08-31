@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
       <?php foreach ($medicos as $key => $linha):?>
           <div class="col-lg-3 text-center">
-            <img src="<?php echo $linha->Imagem?>" class="img-responsive img-circle" alt="<?php echo $linha->Nome?>">
+            <img src="<?php echo $linha->Imagem?>" class="img-fluid img-circle" alt="<?php echo $linha->Nome?>">
             <h2><?php echo $linha->Nome?></h2>
              <p>
                 CRM: <?php echo $linha->CRM?> <br>

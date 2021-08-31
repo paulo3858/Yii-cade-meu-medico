@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="row">
       <?php foreach ($Vmodel as $key => $linha): ?>
           <div class="col-lg-4">
-            <img src="<?php echo $linha->Imagem ?>" class="img-responsive" alt="<?php echo $linha->titulo?>">
+            <img src="<?php echo $linha->Imagem ?>" class="img-fluid" alt="<?php echo $linha->titulo?>">
             <h2><?php echo $linha->titulo?></h2>
             <?php echo $linha->SubTitulo?>
             <p><a class="btn btn-primary" href="<?php echo Url::to('especialidades/view')?>" role="button">Ver Detalhes »</a></p>

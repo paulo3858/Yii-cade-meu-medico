@@ -36,7 +36,7 @@ class Clinica extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['Clinica_id', 'Nome'], 'required'],
+            [['Nome'], 'required'],
             [['Clinica_id', 'ibge', 'status'], 'integer'],
             [['criado_em', 'atualizado_em'], 'safe'],
             [['Nome', 'Endereco', 'Cidade', 'Imagem'], 'string', 'max' => 145],

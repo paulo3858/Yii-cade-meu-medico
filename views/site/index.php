@@ -16,7 +16,7 @@ $this->title = Yii::$app->name;
       <div class="carousel-inner" role="listbox">
        
         <div class="item active">
-          <img class="first-slide img-responsive" src="/img/hero-bg.jpg" alt="First slide">
+          <img class="first-slide img-fluid" src="/img/hero-bg.jpg" alt="First slide">
           <div class="container">
           <div class="carousel-caption">
               <h1>Bem Vindo ao Cadê meu Médico.</h1>
@@ -40,13 +40,13 @@ $this->title = Yii::$app->name;
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img src="/img/gallery/gallery-1.jpg" alt="" class="img-responsive">
+                <img src="/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="/img/gallery/gallery-2.jpg" alt="" class="img-responsive">
+                <img src="/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
             </div>
             <div class="col-md-4">
-                <img src="/img/gallery/gallery-3.jpg" alt="" class="img-responsive">
+                <img src="/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
             </div>
         </div>  
         <hr class="featurette-divider">
@@ -57,7 +57,7 @@ $this->title = Yii::$app->name;
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-        <img src="/img/gallery/gallery-4.jpg" alt="" class="img-responsive">
+        <img src="/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
         </div>
       </div>
       <hr class="featurette-divider">

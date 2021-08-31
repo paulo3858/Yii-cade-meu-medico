@@ -5,12 +5,14 @@
 
 use app\assets\AppAsset;
 use app\widgets\Alert;
-use yii\bootstrap\Breadcrumbs;
-use yii\bootstrap\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\bootstrap\Html as BootstrapHtml;
+use yii\bootstrap4\Breadcrumbs;
+use yii\bootstrap4\Html;
+use yii\bootstrap4\Nav;
+use yii\bootstrap4\NavBar;
+use yii\bootstrap4\Html as BootstrapHtml;
+use yii\helpers\BaseUrl;
 use yii\helpers\Url;
+use yii\web\UrlManager;
 
 AppAsset::register($this);
 ?>
@@ -31,7 +33,7 @@ AppAsset::register($this);
     <?= $this->beginBody() ?> 
     <header>
         <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Cadê meu Médico</a>
+            <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="<?= Url::to(['/admin']) ?>">Cadê meu Médico</a>
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,33 +51,33 @@ AppAsset::register($this);
                 <div class="sidebar-sticky pt-3">
                     <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link active" href="<?= Url::to(['/admin']) ?>">
                         <span data-feather="home"></span>
-                        Dashboard <span class="sr-only">(current)</span>
+                        Dashboard <span class="sr-only"></span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= Url::to('medicos') ?>">
+                        <a class="nav-link" href="<?= Url::to(['/admin/medicos']) ?>">
                         <span data-feather="file"></span>
                         Médicos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="<?= Url::to(['/admin/especialidades']) ?>">
                         <span data-feather="shopping-cart"></span>
                         Especialidades
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="<?= Url::to(['/admin/clinicas']) ?>">
                         <span data-feather="users"></span>
                         Clinicas
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="<?= Url::to(['/admin/medico-has-especialidades']) ?>">
                         <span data-feather="bar-chart-2"></span>
-                        Relatórios
+                        Medicos-Especialidades
                         </a>
                     </li>
                     <li class="nav-item">

@@ -8,7 +8,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
     <div class="col-md-9">
         <div class="col-md-4">
-            <img src="<?= $medico->Imagem ?>" class="img-responsive img-circle" alt="<?= $medico->Nome ?>">
+            <img src="<?= $medico->Imagem ?>" class="img-fluid img-circle" alt="<?= $medico->Nome ?>">
         </div>
         <div class="col-md-8">
             <h1><?= $medico->Nome ?></h1>
@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
     <div class="col-md-3">
-        <img src="<?= $qrCode ?>" class="img-responsive">
+        <img src="<?= $qrCode ?>" class="img-fluid">
     </div>
     
 </div>
@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <?php foreach($medico->medicoHasEspecialidades as $key => $especialidade): ?>
         <div class="col-lg-4">
-            <img src="<?= $especialidade->especialidades->Imagem; ?>" class="img-responsive" alt="<?= $especialidade->especialidades->titulo; ?>" />
+            <img src="<?= $especialidade->especialidades->Imagem; ?>" class="img-fluid" alt="<?= $especialidade->especialidades->titulo; ?>" />
             <h2><?= $especialidade->especialidades->titulo; ?></h2>
             <?= $especialidade->especialidades->SubTitulo; ?>
             <p><a class="btn btn-primary" href="<?= Url::to('especialidades/view') ?>" role="button">Ver Detalhes >></a></p>

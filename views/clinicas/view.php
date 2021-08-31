@@ -9,7 +9,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="row">
     <div class="col-md-9">
         <div class="col-md-4">
-            <img src="<?= $clinica->Imagem ?>" class="img-responsive img-circle" alt="<?= $clinica->Nome ?>">
+            <img src="<?= $clinica->Imagem ?>" class="img-fluid img-circle" alt="<?= $clinica->Nome ?>">
         </div>
         <div class="col-md-8">
             <h1><?= $clinica->Nome ?></h1>
@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
     </div>
     <div class="col-md-3">
-        <img src="<?= $qrCode ?>" class="img-responsive">
+        <img src="<?= $qrCode ?>" class="img-fluid">
     </div>
 </div>
 <hr>
@@ -41,7 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php if(!in_array($especialidade->especialidades->Especialidades_id, $auxEspecialidades)):
             $auxEspecialidades[] = $especialidade->especialidades->Especialidades_id; ?>
             <div class="col-lg-4">
-                <img src="<?= $especialidade->especialidades->Imagem; ?>" class="img-responsive" alt="<?= $especialidade->especialidades->titulo; ?>" />
+                <img src="<?= $especialidade->especialidades->Imagem; ?>" class="img-fluid" alt="<?= $especialidade->especialidades->titulo; ?>" />
                 <h2><?= $especialidade->especialidades->titulo; ?></h2>
                 <p><a class="btn btn-primary" href="<?= Url::to('especialidades/view') ?>" role="button">Ver Detalhes >></a></p>
             </div>
@@ -62,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?php if(!in_array($medicos->medico->Medico_id, $auxMedico)):
             $auxMedico[] = $medicos->medico->Medico_id; ?>
             <div class="col-lg-4">
-                <img src="<?= $medicos->medico->Imagem; ?>" class="img-responsive" alt="<?= $medicos->medico->Nome; ?>" />
+                <img src="<?= $medicos->medico->Imagem; ?>" class="img-fluid" alt="<?= $medicos->medico->Nome; ?>" />
                 <h2><?= $medicos->medico->Nome; ?></h2>
                 <p><a class="btn btn-primary" href="<?= Url::toRoute(['medicos/view', 'id' => $medicos->medico->Medico_id]) ?>" role="button">Ver Detalhes >></a></p>
             </div>
